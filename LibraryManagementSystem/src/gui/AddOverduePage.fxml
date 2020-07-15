@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="423.0" prefWidth="832.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.AddOverdueController">
+    <children>
+        <TextField fx:id="overdueISBN" layoutX="522.0" layoutY="119.0" prefHeight="42.0" prefWidth="195.0" promptText="도서 번호" style="-fx-border-color: #000000;" />
+        <Label alignment="CENTER" layoutX="375.0" layoutY="131.0" prefHeight="21.0" prefWidth="137.0" text="도서번호(ISBN)">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+        <DatePicker fx:id="overdueReturndate" layoutX="522.0" layoutY="240.0" prefHeight="42.0" prefWidth="195.0" style="-fx-border-color: #000000;" />
+        <Label alignment="CENTER" layoutX="416.0" layoutY="250.0" prefHeight="21.0" prefWidth="96.0" text="반납 예정일">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+        <Button fx:id="addOverdueBtn" layoutX="522.0" layoutY="318.0" mnemonicParsing="false" onMouseClicked="#addOverdueAction" prefHeight="42.0" prefWidth="195.0" style="-fx-border-color: #000000;" text="연체 등록">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Button>
+      <Label alignment="CENTER" layoutX="31.0" layoutY="250.0" prefHeight="15.0" prefWidth="96.0" text="대여 회원">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="overdueIssueUserName" layoutX="136.0" layoutY="239.0" prefHeight="42.0" prefWidth="195.0" promptText="대여 회원명" style="-fx-border-color: #000000;" />
+      <TextField fx:id="overdueIssuedBookTitle" layoutX="136.0" layoutY="306.0" prefHeight="42.0" prefWidth="195.0" promptText="도서 제목" style="-fx-border-color: #000000;" />
+      <Label alignment="CENTER" layoutX="31.0" layoutY="317.0" prefHeight="15.0" prefWidth="96.0" text="도서 제목">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="overduePhoneNumber" layoutX="522.0" layoutY="178.0" prefHeight="42.0" prefWidth="195.0" promptText="연락처" style="-fx-border-color: #000000;" />
+      <Label alignment="CENTER" layoutX="416.0" layoutY="189.0" prefHeight="21.0" prefWidth="96.0" text="연락처">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="31.0" layoutY="130.0" prefHeight="15.0" prefWidth="96.0" text="대여 코드">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="overdueIssueCode" layoutX="136.0" layoutY="119.0" prefHeight="42.0" prefWidth="195.0" promptText="대여 코드" style="-fx-border-color: #000000;" />
+      <Label alignment="CENTER" layoutX="31.0" layoutY="190.0" prefHeight="15.0" prefWidth="96.0" text="회원 이메일">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="overdueIssueUserEmail" layoutX="136.0" layoutY="178.0" prefHeight="42.0" prefWidth="195.0" promptText="E-Mail" style="-fx-border-color: #000000;" />
+    </children>
+</AnchorPane>

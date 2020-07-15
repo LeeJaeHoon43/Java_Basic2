@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="423.0" prefWidth="425.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ReturnBookController">
+    <children>
+        <Label alignment="CENTER" layoutX="-4.0" layoutY="1.0" prefHeight="86.0" prefWidth="425.0" text="도서 반납">
+            <font>
+                <Font name="System Bold" size="27.0" />
+            </font>
+        </Label>
+        <TextField fx:id="isbn" layoutX="147.0" layoutY="152.0" prefHeight="44.0" prefWidth="204.0" promptText="도서번호" />
+        <Label alignment="CENTER" layoutX="3.0" layoutY="157.0" prefHeight="34.0" prefWidth="135.0" text="도서 번호 (ISBN)">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+        <Button layoutX="216.0" layoutY="365.0" mnemonicParsing="false" onMouseClicked="#returnAction" prefHeight="44.0" prefWidth="135.0" style="-fx-border-color: #000000;" text="도서 반납">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Button>
+      <Label alignment="CENTER" layoutX="30.0" layoutY="87.0" prefHeight="34.0" prefWidth="117.0" text="대여 회원">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="issuedUser" layoutX="147.0" layoutY="82.0" prefHeight="44.0" prefWidth="204.0" promptText="대여 회원명" />
+      <Label alignment="CENTER" layoutX="21.0" layoutY="227.0" prefHeight="34.0" prefWidth="117.0" text="도서 제목">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="issuedTitle" layoutX="147.0" layoutY="222.0" prefHeight="44.0" prefWidth="204.0" promptText="도서 제목" />
+      <Label alignment="CENTER" layoutX="21.0" layoutY="299.0" prefHeight="34.0" prefWidth="117.0" text="대여 코드">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="issuedcode" layoutX="147.0" layoutY="294.0" prefHeight="44.0" prefWidth="204.0" promptText="대여코드" />
+    </children>
+</AnchorPane>

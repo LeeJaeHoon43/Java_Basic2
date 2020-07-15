@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" maxHeight="583.0" prefHeight="507.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.UserAllIssuedBooksController">
+    <children>
+        <TableView fx:id="issuedBookstable" layoutX="-1.0" layoutY="44.0" prefHeight="462.0" prefWidth="928.0">
+            <columns>
+                <TableColumn fx:id="issueUserColumn" prefWidth="120.0" text="대여회원" />
+            <TableColumn fx:id="issueUserEmailColumn" prefWidth="130.0" text="회원 아이디" />
+                <TableColumn fx:id="titleColumn" minWidth="0.0" prefWidth="160.0" text="도서 제목" />
+                <TableColumn fx:id="ISBNColumn" minWidth="57.3333740234375" prefWidth="70.0" text="도서 번호" />
+                <TableColumn fx:id="phoneNumberColumn" minWidth="0.0" prefWidth="150.0" text="연락처" />
+            <TableColumn fx:id="issuedDateColumn" prefWidth="150.0" text="대여일" />
+            <TableColumn fx:id="returnDateColumn" prefWidth="150.0" text="반납 예정일" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>
